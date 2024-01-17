@@ -4,7 +4,7 @@ This code illustrates how you could get a stack trace of the Dart thread
 using native stack unwinding.
 
 The core of the implementation is in the `lib/collect_stack.dart` and
-`lib/collect_stack.cc`.
+`src/collect_stack.cc`.
 
 * The target thread needs to proactively register itself by calling
 `setCurrentThreadAsTarget`. This only really works for isolates that
